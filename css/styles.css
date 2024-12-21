@@ -7,19 +7,48 @@ header{
 span{
     color: #000000;
 }
-
-
-
 body{
     color: #FFFFFF;
 }
+.effecity{
+    background-color: #2F303A;
+
+}
+.order{
+    color: #2196F3;
+}
+.spcial{
+    color: #ffffff;
+}
+.quality{
+  color: #212121;
+}
+.text{
+  color: #757575;
+}
+.work{
+    background-color: #ffffff;
+}
 
 
+
+.team{
+    background-color: #F5F4FA;
+}
+.name{
+    color: #212121;
+}
+.profession{
+    color: #757575;
+}
 
 
 
 footer{
     background-color: #2F303A;
+}
+.logo1{
+    color: #ffffff;
 }
 .contact{
     color: #FFFFFF60;

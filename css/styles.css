@@ -1,8 +1,13 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
 header{
     background-color: #FFFFFF;
 }
 .logo {
     color: #2196F3;
+    font-family: 'Raleway';
 }
 span{
     color: #000000;
@@ -12,7 +17,9 @@ body{
 }
 .effecity{
     background-color: #2F303A;
-
+}
+h1{
+    font-family: 'Roboto';
 }
 .order{
     color: #2196F3;

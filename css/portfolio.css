@@ -1,7 +1,8 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
-  --main-font-weight: 700;
+  --main-text-font-weight: 700;
+  --main-title-font-weight: 900;
   --main-text-color: #757575;
   --main-background: #FFFFFF;
 }

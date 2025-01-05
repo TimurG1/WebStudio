@@ -1,6 +1,9 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+  --main-font-weight: 700;
+  --main-text-color: #757575;
+  --main-background: #FFFFFF;
 }
 header{
     background-color: #FFFFFF;
@@ -32,6 +35,7 @@ h1{
 }
 .text{
   color: #757575;
+  font-family:Roboto;
 }
 .work{
     background-color: #ffffff;

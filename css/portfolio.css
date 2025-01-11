@@ -5,38 +5,85 @@
   --main-title-font-weight: 900;
   --main-text-color: #757575;
   --main-background: #FFFFFF;
+  --title-line-hight: 36px
 }
-header{
-    background-color: #FFFFFF;
-}
-.logo {
-    color: #2196F3;
-}
-span{
-    color: #000000;
-}
-
-.card{
-    color: #EEEEEE;
-}
-.title{
+body{
+    font-weight: 700;
+    font-family: var(--font-family);
     color: #212121;
+    font-size: 16px;
 }
-.text{
-    color: #757575;
+/* header */
+header{
+    background-color: #ECECEC;
 }
-
-
-
-footer{
-    background-color: #2F303A;
+.logo{
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
 }
-.logo1{
-    color: #ffffff;
+.studio{
+    color: #000;
+}
+.nav-list-link{
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav-list-link:hover{
+    color: #2196f3;
 }
 .contact{
-    color: #FFFFFF60;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
-.oficceaddress{
-    color: #FFFFFF;
+.contact:hover{
+       color: #2196f3;
+}
+/* main */
+.filter-list-link{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 162%;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: #212121;
+}
+.articlr-list-card{
+    width: 370px;
+    height: 404px;
+}
+.article-list-img{
+    width: 370px;
+    height: 294px;
+}
+.article-list-title{
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+}
+.article-list-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* footer */
+footer{
+ background-color: #2F303A;
+}
+.studio1{
+    color: #fff;
+}
+.oficce-address{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #fff;
 }

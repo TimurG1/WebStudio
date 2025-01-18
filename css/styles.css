@@ -9,7 +9,7 @@
 body{
     font-family: var(--font-family);
     color: var(--main-text-color);
-    font-size: var(--main-text-font-weight);
+    font-weight: var(--main-text-font-weight);
 }
 /* header */
 header{
@@ -48,7 +48,7 @@ header{
 .effecity-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -62,7 +62,7 @@ header{
     background: #2196f3;
     font-weight: 700;
     font-size: 16px;
-    line-height: 187%;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
     color: #fff;
@@ -76,7 +76,7 @@ header{
  .special-text{
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
  }
@@ -116,7 +116,7 @@ footer{
 .oficce-address{
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #fff;
 }

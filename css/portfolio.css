@@ -13,9 +13,26 @@ body{
     color: #212121;
     font-size: 16px;
 }
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 94px;
+}
+.container1{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 /* header */
 header{
     background-color: #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo{
     font-size: 26px;
@@ -76,6 +93,8 @@ header{
 /* footer */
 footer{
  background-color: #2F303A;
+ padding-top: 60px;
+ padding-bottom: 60px;
 }
 .studio1{
     color: #fff;

@@ -12,14 +12,35 @@ body{
     font-weight: var(--main-text-font-weight);
 }
 .container{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.work , .special{
+
+.work , .special , .effecity , .special{
     margin-bottom: 94px;
+}
+.work-list , .team-list , .special-list{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    column-gap: 20px;
+    align-items: center;
+    column-gap: 30px;
+}
+.header-position{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 92px;
 }
 /* header */
 header{
@@ -82,6 +103,7 @@ header{
     color: #fff;
 }
 .special-title{
+    display: none;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -102,6 +124,8 @@ text-align: center;
 }
 .team{
  background-color: #F5F4FA;
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 .team-title{
     font-size: 36px;
@@ -126,10 +150,15 @@ text-align: center;
  color: #757575;
 }
 /* footer */
-footer{
- background-color: #2F303A;
- padding-top: 60px;
- padding-bottom: 60px;
+ footer{
+  background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+ .footer{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .studio1{
     color: #fff;

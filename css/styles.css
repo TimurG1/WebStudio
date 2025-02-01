@@ -41,7 +41,9 @@ body{
     justify-content: space-between;
     flex-direction: row;
     column-gap: 92px;
+    align-items: center;
 }
+
 /* header */
 header{
     background-color: #ECECEC;
@@ -62,8 +64,16 @@ header{
   letter-spacing: 0.02em;
   color: #212121;
 }
+.nav-list , .contact-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
 .nav-list-link:hover{
     color: #2196f3;
+}
+.contact-list{
+  margin-left: 343px
 }
 .contact{
     font-weight: 500;

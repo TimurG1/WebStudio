@@ -74,19 +74,32 @@ header{
 /* main */
 .filter-list{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 8px;
 }
-.filter-list-link{
+.filter-button{
    font-weight: 500;
    font-size: 16px;
    line-height: 162%;
    letter-spacing: 0.03em;
    text-align: center;
    color: #212121;
+   margin-top: 94px;
+   margin-bottom: 34px;
+   padding: 6px 25px;
+   border: 1px;
+   background-color: #F5F4FA;
+   border-radius: 4px;
 }
+.filter-button:hover{
+    background-color: #2196f3;
+    color: #FFFFFF;
+} 
 .article-list{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 .articlr-list-card{
     width: 370px;

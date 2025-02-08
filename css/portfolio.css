@@ -20,6 +20,10 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.header-position{
+    display: flex;
+    align-items: center;
+}
 .card{
     margin-bottom: 94px;
 }
@@ -37,6 +41,14 @@ header{
 .studio{
     color: #000;
 }
+.nav-list{
+    margin-left: 93px;
+}
+.nav-list , .contact-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
 .nav-list-link{
   font-weight: 500;
   font-size: 14px;
@@ -53,10 +65,17 @@ header{
     letter-spacing: 0.02em;
     color: #757575;
 }
+.contact-list{
+  margin-left: 343px
+}
 .contact:hover{
        color: #2196f3;
 }
 /* main */
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 .filter-list-link{
    font-weight: 500;
    font-size: 16px;
@@ -64,6 +83,10 @@ header{
    letter-spacing: 0.03em;
    text-align: center;
    color: #212121;
+}
+.article-list{
+    display: flex;
+    flex-wrap: wrap;
 }
 .articlr-list-card{
     width: 370px;

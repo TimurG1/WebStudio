@@ -98,16 +98,9 @@ header{
 .article-list{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
 }
 .articlr-list-card{
-    width: 370px;
-    height: 404px;
-}
-.article-list-img{
-    width: 370px;
-    height: 294px;
+      flex-basis: calc((100% - 30px) / 3);
 }
 .article-list-title{
     font-size: 18px;

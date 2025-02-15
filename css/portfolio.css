@@ -98,6 +98,8 @@ header{
 .article-list{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 .articlr-list-card{
       flex-basis: calc((100% - 30px) / 3);

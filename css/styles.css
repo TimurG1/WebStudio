@@ -36,7 +36,6 @@ body{
 }
 /* header */
 header{
-    background-color: #ECECEC;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -116,6 +115,18 @@ header{
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.special-list-item:nth-child(1):before{
+    content: url(/images/antena.png);
+}
+.special-list-item:nth-child(2):before{
+    content: url(/images/clock.png);
+}
+.special-list-item:nth-child(3):before{
+    content: url(/images/graph.png);
+}
+.special-list-item:nth-child(4):before{
+    content: url(/images/astronaut.png);
 }
  .special-text{
   font-weight: 400;

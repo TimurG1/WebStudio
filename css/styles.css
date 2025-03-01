@@ -168,6 +168,10 @@ header{
  padding-top: 94px;
  padding-bottom: 94px;
 }
+.team-list-article{
+    background-color: #FFFFFF;
+    box-shadow: 0 2.8px 1px rgb(0, 0, 0);
+}
 .team-title{
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -177,12 +181,14 @@ header{
 .team-list-img{
     width: 270px;
     height: 260px;
+    margin-bottom: 30px;
 }
 .team-list-title{
  font-weight: 500;
  font-size: 16px;
  letter-spacing: 0.03em;
  text-align: center;
+ margin-bottom: 10px;
 }
 .team-list-text{
  font-weight: 400;
@@ -190,6 +196,7 @@ header{
  letter-spacing: 0.03em;
  text-align: center;
  color: #757575;
+ margin-bottom: 30px;
 }
 /* footer */
  footer{

@@ -92,6 +92,7 @@ header{
 }
 .filter-button:hover{
     background-color: #2196f3;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     color: #FFFFFF;
 } 
 .article-list{
@@ -102,6 +103,9 @@ header{
 }
 .articlr-list-card{
       flex-basis: calc((100% - 30px) / 3);
+}
+.articlr-list-item:hover{
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .article-list-title{
     font-size: 18px;

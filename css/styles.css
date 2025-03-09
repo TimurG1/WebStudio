@@ -84,8 +84,9 @@ header{
 .effecity{
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/heros.png)
-
+    background-image: url(../images/overlay.png), url(../images/heros.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .effecity-title{
     font-weight: 900;
@@ -168,10 +169,9 @@ header{
  padding-top: 94px;
  padding-bottom: 94px;
 }
-.team-list-article{
+.team-list-item{
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-
 }
 .team-title{
     font-size: 36px;

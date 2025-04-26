@@ -102,7 +102,7 @@ header{
     row-gap: 30px;
 }
 .articlr-list-card{
-      flex-basis: calc((100% - 30px) / 3);
+      flex-basis: calc((100% - 2 * 30px) / 3);
 }
 .article-list-item:hover{
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);

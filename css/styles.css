@@ -55,22 +55,42 @@ header{
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav-list , .contact-list{
+.nav-list{
     display: flex;
     flex-direction: row;
     column-gap: 50px;
+}
+.contact-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
 }
 .nav-list-link:hover{
     color: #2196f3;
 }
 .contact-list{
-  margin-left: 343px
+  margin-left: 318px
 }
-.contact{
+.contact, .contact-email, .contact-tel{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+}
+.contact-tel:hover .icon-smartphone{
+    fill: #2196f3;
+}
+.icon-smartphone{
+    fill: #757575;
+}
+.contact-email:hover .icon-envelope{
+    fill: #2196f3;
+}
+.icon-envelope{
+    fill: #757575;
+}
+.contact-email:hover, .contact-tel:hover{
+    color: #2196f3;
 }
 .contact:hover{
        color: #2196f3;
@@ -197,7 +217,65 @@ header{
  letter-spacing: 0.03em;
  text-align: center;
  color: #757575;
- margin-bottom: 30px;
+ margin-bottom: 16px;
+}
+.team-social-list{
+    display: flex;
+    justify-content: center;
+}
+.team-social{
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.team-social:hover{
+    background-color: #2196F3;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.team-icon{
+   padding: 12px;
+   fill: #AFB1B8;
+   width: 44px;
+   height: 44px;
+   
+}
+.team-icon:hover{
+   padding: 12px;
+   fill: #fff;
+   width: 44px;
+   height: 44px;
+}
+/* Клієнти */
+.custumers-list{
+    display: flex;
+    justify-content: center;
+}
+.title-custumers{
+    margin-top: 94px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+.icon-custumers{
+   width: 170px;
+   height: 92px;
+   margin-top: 50px;
+   margin-left: 30px;
+   margin-bottom: 94px;
+    fill: #AFB1B8;
+   border: 1px solid #AFB1B8;
+   border-radius: 2px;
+}
+.icon-custumers:hover{
+    fill: #2196f3;
+    border: 1px solid #2196f3 ;
 }
 /* footer */
  footer{
@@ -205,13 +283,24 @@ header{
   padding-top: 60px;
   padding-bottom: 60px;
  }
+ .footer-position{
+    display: flex;
+    align-items: center;
+ }
  .footer{
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+.address-position{
+    margin-top: 20px;
+}
+.address-link{
+    margin-top: 9px;
+}
 .studio1{
     color: #fff;
+    margin-bottom: 20px;
 }
 .oficce-address{
     font-weight: 400;
@@ -220,5 +309,40 @@ header{
     letter-spacing: 0.03em;
     color: #fff;
 }
-
-
+.social-section{
+    margin-left: 70px;
+    height: 80px;
+    width: 206px;
+}
+.social-list{
+    display: flex;
+}
+.social-text{
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer-circle{
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   width: 44px;
+   height: 44px;
+   margin-right: 10px;
+}
+.footer-circle-twitter{
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #2196F3;
+    width: 44px;
+    height: 44px;
+}
+.icon-footer{
+   padding: 12px;
+   fill: #FFFFFF;
+   width: 44px;
+   height: 44px;
+}

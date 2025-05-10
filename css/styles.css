@@ -185,6 +185,9 @@ header{
    margin-bottom: 50px;
 }
 .work-text{
+   position: relative;
+   bottom: 73px;
+
    font-family: var(--font-family);
    font-weight: 700;
    font-size: 14px;
@@ -192,6 +195,10 @@ header{
    text-transform: uppercase;
    text-align: center;
    color: #fff;
+   background-color: rgba(47, 48, 58, 0.8);
+   
+   padding-top: 29px;
+   height: 70px;
 }
 .team{
  background-color: #F5F4FA;

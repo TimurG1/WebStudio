@@ -184,6 +184,15 @@ header{
    text-align: center;
    margin-bottom: 50px;
 }
+.work-text{
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+}
 .team{
  background-color: #F5F4FA;
  padding-top: 94px;

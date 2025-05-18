@@ -184,9 +184,14 @@ header{
    text-align: center;
    margin-bottom: 50px;
 }
-.work-text{
-   position: relative;
-   bottom: 73px;
+.work-list-itme{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.work-text1{
+   position: absolute;
+   bottom: 0px;
 
    font-family: var(--font-family);
    font-weight: 700;
@@ -197,6 +202,44 @@ header{
    color: #fff;
    background-color: rgba(47, 48, 58, 0.8);
    
+   padding-left: 107px;
+   padding-right: 107px;
+   padding-top: 29px;
+   height: 70px;
+}
+.work-text2{
+   position: absolute;
+   bottom: 0px;
+
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   background-color: rgba(47, 48, 58, 0.8);
+   
+   padding-left: 112px;
+   padding-right: 112px;
+   padding-top: 29px;
+   height: 70px;
+}
+.work-text3{
+   position: absolute;
+   bottom: 0px;
+
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   background-color: rgba(47, 48, 58, 0.8);
+   
+   padding-left: 94px;
+   padding-right: 94px;
    padding-top: 29px;
    height: 70px;
 }

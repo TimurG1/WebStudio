@@ -28,69 +28,91 @@ body {
   margin-bottom: 94px;
 }
 /* header */
-header {
+header{
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.logo {
+.logo{
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.studio {
+.studio{
   color: #000;
 }
-.nav-list {
+.nav-list{
   margin-left: 93px;
 }
-.nav-list-link {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #212121;
+.nav-list-item{
+  position: relative;
 }
-.nav-list {
+.nav-list-link{
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #212121;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list-link:hover::after{
+content: '';
+display: block;
+position: absolute;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #2196f3;
+top: 44px;
+}
+.nav-list{
   display: flex;
   flex-direction: row;
   column-gap: 50px;
 }
-.contact-list {
+.contact-list{
   display: flex;
   flex-direction: row;
   column-gap: 30px;
 }
-.nav-list-link:hover {
+.nav-list-link:hover{
   color: #2196f3;
 }
-.contact-list {
-  margin-left: 318px;
+.contact-list{
+margin-left: 318px
 }
-.contact,
-.contact-email,
-.contact-tel {
+.contact, .contact-email, .contact-tel{
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-tel:hover .icon-smartphone {
+.contact-tel:hover .icon-smartphone{
   fill: #2196f3;
 }
-.icon-smartphone {
+.icon-smartphone{
   fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-email:hover .icon-envelope {
+.contact-email:hover .icon-envelope{
   fill: #2196f3;
 }
-.icon-envelope {
+.icon-envelope{
   fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-email:hover,
-.contact-tel:hover {
+.contact-email:hover, .contact-tel:hover{
   color: #2196f3;
 }
-.contact:hover {
-  color: #2196f3;
+.contact:hover{
+     color: #2196f3;
 }
 /* main */
 .filter-list {
@@ -131,6 +153,31 @@ header {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
+.img-overlay{
+  position: relative;
+  overflow: hidden;
+}
+.text-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  transform: translateY(-100%);
+  transition: transform 750ms;
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.img-overlay:hover .text-overlay{
+  transform: translateY(0);
+}
 .article-list-title {
   font-size: 18px;
   line-height: 200%;
@@ -148,65 +195,117 @@ header {
   margin-bottom: 20px;
 }
 /* footer */
-footer {
-  background-color: #2f303a;
+footer{
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+ }
+ .footer-position{
+    display: flex;
+    align-items: center;
+ }
+ .footer{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.footer-position {
-  display: flex;
-  align-items: center;
+.address-position{
+    margin-top: 20px;
 }
-.studio1 {
-  color: #fff;
+.address-link{
+    margin-top: 9px;
 }
-.address-position {
-  margin-top: 20px;
+.studio1{
+    color: #fff;
+    margin-bottom: 20px;
 }
-.address-link {
-  margin-top: 9px;
+.oficce-address{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #fff;
 }
-.oficce-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #fff;
+.social-section{
+    margin-left: 70px;
+    height: 80px;
+    width: 206px;
 }
-.social-section {
-  margin-left: 70px;
-  height: 80px;
-  width: 206px;
+.social-list{
+    display: flex;
 }
-.social-list {
-  display: flex;
+.social-text{
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
 }
-.social-text {
-  margin-bottom: 20px;
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
+.footer-circle{
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   width: 44px;
+   height: 44px;
+   margin-right: 10px;
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-circle {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
+.footer-circle:hover{
+    background-color: #2196F3;
 }
-.footer-circle-twitter {
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: #2196f3;
-  width: 44px;
-  height: 44px;
+.icon-footer{
+   padding: 12px;
+   fill: #FFFFFF;
+   width: 44px;
+   height: 44px;
 }
-.icon-footer {
-  padding: 12px;
-  fill: #ffffff;
-  width: 44px;
-  height: 44px;
+.subscribe{
+   width: 570px;
+   height: 86px;
+   margin-left: 93px;
+}
+.subscribe-title{
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.subscribe-position{
+    position: relative;
+}
+.subscribe-input{
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 4px;
+   width: 358px;
+   height: 50px;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+   background: rgba(33, 150, 243, 0);
+   padding-left: 15px;
+}
+.subscribe-button{
+    border-radius: 4px;
+    width: 200px;
+    height: 50px; 
+    padding-left: 28px;
+    padding-right: 62px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #2196f3;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+.icon-send{
+    position: absolute;
+    top: 13px;
+    right: 40px;
+    fill: #fff;
 }

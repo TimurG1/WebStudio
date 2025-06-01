@@ -49,11 +49,27 @@ header{
 .nav-list{
     margin-left: 93px;
 }
+.nav-list-item{
+    position: relative;
+}
 .nav-list-link{
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list-link:hover::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  top: 44px;
 }
 .nav-list{
     display: flex;
@@ -76,18 +92,27 @@ header{
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-tel:hover .icon-smartphone{
     fill: #2196f3;
 }
 .icon-smartphone{
     fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-email:hover .icon-envelope{
     fill: #2196f3;
 }
 .icon-envelope{
     fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-email:hover, .contact-tel:hover{
     color: #2196f3;
@@ -147,7 +172,8 @@ header{
   position: absolute;
   top: 50%;
   left: 50%;
-
+  
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
@@ -163,6 +189,9 @@ header{
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--main-text-color);
+}
+.icon-cross:hover{
+    fill: #2196F3;
 }
 .close-circle{
     position: absolute;
@@ -201,12 +230,15 @@ header{
     padding-left: 42px;
     border: 2px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus{
-    height: 40px;
-    padding-left: 42px;
-    
-    border-radius: 4px;
+.modal-input:hover{
+    border: 2px solid #2196F3
+}
+.modal-input:hover .icon-person{
+    fill: #2196F3;
 }
 .modal-comment{
     width: 100%;
@@ -428,25 +460,24 @@ header{
     height: 44px;
     margin-left: 10px;
     margin-bottom: 30px;
+    transition-property: backgrond-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social:hover{
     background-color: #2196F3;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
 }
 .team-icon{
    padding: 12px;
    fill: #AFB1B8;
    width: 44px;
    height: 44px;
-   
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon:hover{
-   padding: 12px;
    fill: #fff;
-   width: 44px;
-   height: 44px;
 }
 /* Клієнти */
 .custumers-list{
@@ -471,6 +502,9 @@ header{
     fill: #AFB1B8;
    border: 1px solid #AFB1B8;
    border-radius: 2px;
+   transition-property: fill, border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-custumers:hover{
     fill: #2196f3;
@@ -531,13 +565,12 @@ header{
    width: 44px;
    height: 44px;
    margin-right: 10px;
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-circle:hover{
-    border-radius: 50%;
-    margin-right: 10px;
     background-color: #2196F3;
-    width: 44px;
-    height: 44px;
 }
 .icon-footer{
    padding: 12px;
@@ -559,6 +592,9 @@ header{
     text-transform: uppercase;
     color: #fff;
 }
+.subscribe-position{
+    position: relative;
+}
 .subscribe-input{
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
@@ -572,6 +608,8 @@ header{
     border-radius: 4px;
     width: 200px;
     height: 50px; 
+    padding-left: 28px;
+    padding-right: 62px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;
     font-family: var(--font-family);
@@ -579,9 +617,11 @@ header{
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
-    text-align: center;
     color: #fff;
 }
 .icon-send{
+    position: absolute;
+    top: 13px;
+    right: 40px;
     fill: #fff;
 }
